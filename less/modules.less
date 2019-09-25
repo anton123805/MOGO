@@ -1,0 +1,73 @@
+.top {
+    position: relative;
+    h3 {
+        font-family: kaushan script;
+        font-size: 1.7rem;
+        font-weight: normal;
+        text-align: center;
+        color: #333;
+    }
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: bold;
+        color: #333;
+        text-transform: uppercase;
+    }
+    &:after {
+        content: ' ';
+        .line(60px, 3px, #F38181);
+        position: absolute;
+        bottom: -2em;
+        left: calc(50% - 30px);
+    }
+}
+
+.text {
+    p {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5.5em;
+        width: 960px;
+        font-family: Roboto;
+        color: #999;
+        text-align: center;
+    }
+}
+
+.superteam {
+    text-align: center;
+    box-shadow: 10px 10px 0 0 #95E1D3;
+    margin: -10px 0 0 -10px;
+}
+
+.imgrow {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 7em;
+}
+
+.comment {
+    article {
+        color: #999;
+        font-family: roboto;
+        font-style: italic;
+        font-weight: lighter;
+        font-size: 1.5rem;
+        width: 32em;
+    }
+    .author {
+        margin-top: 0.3em;
+        color: #333;
+        font-size: 1.5rem;
+        font-family: kaushan script;
+        &:before {
+            content: ' ';
+            display: inline-block;
+            .line(60px, 3px, #F38181);
+            margin-bottom: 5px;
+        }
+    }
+}
